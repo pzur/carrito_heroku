@@ -12,7 +12,7 @@ class PreciosProductosSerializer(serializers.ModelSerializer):  # Los Campos Hij
 class FotosProductosSerializer(serializers.ModelSerializer):  # Los Campos Hijos
     class Meta:
         model = Producto_Fotos
-        fields = ['foto1', 'foto2', 'foto3', 'foto4']
+        fields = ['photo_1', 'photo_2', 'photo_3', 'photo_4']
 
 
 class ProductosSerializer(serializers.HyperlinkedModelSerializer):

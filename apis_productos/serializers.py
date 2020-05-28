@@ -2,7 +2,6 @@ from rest_framework import serializers
 from .models import Productos, Producto_Precios, Producto_Fotos
 
 
-
 class PreciosProductosSerializer(serializers.ModelSerializer):  # Los Campos Hijos
     class Meta:
         model = Producto_Precios
@@ -12,7 +11,7 @@ class PreciosProductosSerializer(serializers.ModelSerializer):  # Los Campos Hij
 class FotosProductosSerializer(serializers.ModelSerializer):  # Los Campos Hijos
     class Meta:
         model = Producto_Fotos
-        fields = ['photo', 'photo', 'photo', 'photo']
+        fields = ['photo_1', 'photo_2', 'photo_3', 'photo_4']
 
 
 # Serializers define the API representation.

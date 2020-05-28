@@ -25,10 +25,10 @@ class Ingredientes(models.Model):
         return self.producto.producto
 
 class Producto_Fotos(models.Model):
-    photo = models.ImageField(upload_to='Productos/Fotos', null=True, blank=True)
-    photo = models.ImageField(upload_to='Productos/Fotos', null=True, blank=True)
-    photo = models.ImageField(upload_to='Productos/Fotos', null=True, blank=True)
-    photo = models.ImageField(upload_to='Productos/Fotos', null=True, blank=True)
+    photo_1 = models.ImageField(upload_to='Productos/Fotos', null=True, blank=True)
+    photo_2 = models.ImageField(upload_to='Productos/Fotos', null=True, blank=True)
+    photo_3 = models.ImageField(upload_to='Productos/Fotos', null=True, blank=True)
+    photo_4 = models.ImageField(upload_to='Productos/Fotos', null=True, blank=True)
     producto = models.ForeignKey(Productos, on_delete=models.CASCADE, related_name='producto_fotos')
     estado = models.BooleanField(default=True)
 
