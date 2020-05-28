@@ -21,3 +21,5 @@ class ProductoDetailView(generics.RetrieveAPIView):
 #ELIMINAR =DestroyAPIView
 #ACTUALIZAR =UpdateAPIView
 #LISTAR/CREAR = ListCreateAPIView
+#RetrieveAPIView = para enlistar un solo modelo
+

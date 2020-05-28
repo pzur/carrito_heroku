@@ -17,3 +17,10 @@ class CategoriaViewSet(viewsets.ModelViewSet):  # Rest Full
     serializer_class = CategoriaSerializer
 
 
+
+#RESFULL  = model.modelviewset
+#LISTAR = ListAPIView
+#CREAR  = CreateAPIView
+#ELIMINAR =DestroyAPIView
+#ACTUALIZAR =UpdateAPIView
+#LISTAR/CREAR = ListCreateAPIView

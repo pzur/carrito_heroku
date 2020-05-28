@@ -10,5 +10,5 @@ urlpatterns = [
 
 ]
 
-# http://127.0.0.1:8000/apis_productos/List_Productos/
+#http://127.0.0.1:8000/apis_productos/List_Productos/
 #http://127.0.0.1:8000/apis_productos/Detail_Productos/2

@@ -57,7 +57,12 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "https://example.com",
+
+    "https://carritosgo.herokuapp.com/apis_categorias/List_Categorias_Productos/",
+    "https://carritosgo.herokuapp.com/apis_productos/Detail_Productos/",
+    "https://carritosgo.herokuapp.com/apis_productos/List_Productos/",
+    "https://carritosgo.herokuapp.com/apis_user/registrarusuario/",
+    "https://carritosgo.herokuapp.com/apis_user/autenticar/",
     "https://sub.example.com",
     "http://localhost:3000",
     "http://127.0.0.1:9000"
