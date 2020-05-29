@@ -5,13 +5,14 @@ from django.http import HttpResponse
 from rest_framework.views import APIView
 from django.contrib.auth import authenticate
 from .models import Personas
-from rest_framework.parsers import FormParser,MultiPartParser
+from rest_framework.permissions import Allowany
 
 
 # Vistas Basadas en Clases Controlando todo el Modelo de Usuarios
 
 class RegistrarUsuarios(generics.CreateAPIView): #Solo Registrar datos en el modelo
-    parser_classes = (MultiPartParser,FormParser,)
+    permission_classes = [AllowAny,]
+    
     def post(self, request, *args, **kwargs):
         # Creando en Nuevo Usuario
         username = request.POST.get('username')
@@ -29,7 +30,7 @@ class RegistrarUsuarios(generics.CreateAPIView): #Solo Registrar datos en el mod
 
 
 class LoginView(APIView):
-    parser_classes = (MultiPartParser,FormParser,)
+    
     def post(self, request, ):
         username = request.POST.get("username")
         password = request.POST.get("password")
