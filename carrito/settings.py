@@ -24,7 +24,7 @@ SECRET_KEY = '!^n0uaoz6*#&vu=$l%3iok8*t4yd@96av9)2l*drg4odd+mm-k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['carritosgo.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
