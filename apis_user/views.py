@@ -11,7 +11,7 @@ from rest_framework.permissions import Allowany
 # Vistas Basadas en Clases Controlando todo el Modelo de Usuarios
 
 class RegistrarUsuarios(generics.CreateAPIView): #Solo Registrar datos en el modelo
-    permission_classes = [AllowAny,]
+    #permission_classes = [AllowAny,]
     
     def post(self, request, *args, **kwargs):
         # Creando en Nuevo Usuario
